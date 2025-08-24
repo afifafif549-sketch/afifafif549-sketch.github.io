@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio — Afif Muntashir Erhan</title>
+  <meta name="description" content="Portofolio Afif Muntashir Erhan — Field Assistant & Planters.">
+  <style>
+    :root{
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --text:#111827;
+      --accent:#22c55e;
+      --ring:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--ring)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:50px;height:50px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#22c55e}
+    .logo img{width:100%;height:100%;object-fit:contain}
+    .title h1{margin:0;font-size:clamp(28px,4vw,36px)}
+    .subtitle{color:var(--muted);font-size:15px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:10px 16px;border-radius:10px;border:1px solid var(--ring);background:var(--card);cursor:pointer;color:var(--text);font-weight:500}
+    .btn.primary{background:var(--accent);color:white;border:none}
+    main{display:grid;gap:28px;padding:24px 0}
+    section.card{background:var(--card);border:1px solid var(--ring);border-radius:14px;padding:20px;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+    h2{margin:0 0 12px 0;font-size:22px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#f3f4f6;border:1px solid var(--ring);padding:8px 12px;border-radius:999px;font-size:14px}
+    .grid{display:grid;gap:14px}
+    @media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+    .list{display:grid;gap:8px}
+    .item{padding:12px 14px;border-radius:10px;background:#f9fafb;border:1px solid var(--ring)}
+    footer{padding:28px 0;border-top:1px solid var(--ring);display:grid;gap:10px;color:var(--muted);font-size:14px;text-align:center}
+    .contact{display:flex;flex-wrap:wrap;gap:10px}
+    .contact a,.contact span{padding:10px 12px;border-radius:10px;border:1px solid var(--ring);background:#f9fafb}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="logo-afif.png" alt="Logo Afif"></div>
+        <div class="title">
+          <h1>Afif Muntashir Erhan</h1>
+          <div class="subtitle">Field Assistant &amp; Planters</div>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Hubungi Saya</a>
+        <a class="btn" href="#tentang">Tentang</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Saya seorang profesional di bidang <strong>perkebunan kelapa sawit</strong> dan <strong>otomotif</strong>. 
+        Saya berpengalaman dalam memimpin tim, mengelola operasional lapangan, serta mencari solusi inovatif untuk meningkatkan hasil kerja. 
+        Tujuan saya adalah memberikan kontribusi maksimal bagi perusahaan melalui dedikasi dan keterampilan.</p>
+      </section>
+
+      <section class="card">
+        <h2>Keterampilan Utama</h2>
+        <div class="chips">
+          <span class="chip">Leadership</span>
+          <span class="chip">Team Management</span>
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Data Analysis</span>
+          <span class="chip">Social Media Marketing</span>
+          <span class="chip">Microsoft Office</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Pengalaman Kerja</h2>
+        <div class="list">
+          <div class="item"><strong>Perkebunan Kelapa Sawit:</strong> Mengelola proses panen & perawatan kebun, memastikan produktivitas serta efisiensi tim.</div>
+          <div class="item"><strong>Otomotif:</strong> Berkontribusi dalam operasional bengkel dan pemasaran produk otomotif untuk meningkatkan brand awareness.</div>
+          <div class="item">Memimpin tim operasional dengan fokus pada pencapaian target.</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Bidang Pekerjaan</h2>
+        <div class="grid">
+          <div class="item">🌱 Perkebunan Kelapa Sawit</div>
+          <div class="item">🚗 Otomotif</div>
+        </div>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Kontak</h2>
+        <div class="contact">
+          <a href="https://wa.me/6281215883507" target="_blank" rel="noopener">WhatsApp 1: 0812-1588-3507</a>
+          <a href="https://wa.me/6285182753407" target="_blank" rel="noopener">WhatsApp 2: 0851-8275-3407</a>
+          <a href="mailto:afifafif549@gmail.com">Email: afifafif549@gmail.com</a>
+          <span>Alamat: Jl. Nusa Indah, Simarito, Siantar Barat, Pematangsiantar, Sumatera Utara</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="y"></span> Afif Muntashir Erhan • Portofolio profesional</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=(new Date()).getFullYear();</script>
+</body>
+</html>
